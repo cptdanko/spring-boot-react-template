@@ -6,8 +6,7 @@ import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+@Data
 @ToString
 @Log
 @Builder

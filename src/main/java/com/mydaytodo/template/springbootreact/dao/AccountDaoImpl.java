@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Component
 @Log
@@ -26,6 +25,7 @@ public class AccountDaoImpl {
                 .findFirst();
     }
     public ApiResponse addNewAccount(Account account) {
+        log.info(String.format("About to add account [ %s ]", account.toString()));
         accounts.add(account);
         return ApiResponse.builder()
                 .data(account)
@@ -41,13 +41,6 @@ public class AccountDaoImpl {
                 .build();
     }
     public ApiResponse deleteAccount(String accountId) {
-        /* if(getAccount(accountId).isEmpty()) {
-            return ApiResponse.builder()
-                    .responseCode(HttpStatus.NOT_FOUND.value())
-                    .message("Account with id doesn't exist")
-                    .data(null)
-                    .build();
-        }*/
         accounts = accounts.stream()
                 .filter(account -> !(account.getAccountId().equals(accountId)))
                 .toList();
@@ -68,6 +61,7 @@ public class AccountDaoImpl {
                 .build();
     }
     public ApiResponse getAllAccounts() {
+        log.info("Received request to get all accounts");
         return ApiResponse.builder()
                 .responseCode(HttpStatus.OK.value())
                 .message("")
