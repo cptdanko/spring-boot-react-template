@@ -2,7 +2,9 @@
 
 A template to create a monolithic Spring Boot app with a reactjs based front-end.
 
-This repository provides a temnplate for a full stack solution for a Java spring boot API with a react based front-end.
+This repository provides a temnplate for a full stack solution for a Java spring boot API with a react based front-end. This repository 
+presents a monolithic web app based full stack solutions. Building microservices is often considered the norm these days, however 
+monolithic apps still have valid uses for which they can be used, one example being, when doing proof of concept for a new product.
 
 ## Details for the Spring Boot API
 A simple spring boot based REST API that can CRUD's data for accounts for customers.
@@ -19,15 +21,21 @@ A simple spring boot based REST API that can CRUD's data for accounts for custom
 
 ## Details for the react based SPA
 
-** to be added
+Added a simple react based app that allows you to CRUD data to the backend API from the frontend. The UI is simple and self-explanatory. 
+The purpose of the UI is to demonstrate certain concepts of UI integration with a spring boot app.
+
+### Build Plugin
+
+To build a react app and launch it when running ``` mvn spring-boot:run```, the [frontend-maven-plugin] is used. Have a look at the [pom.
+xml] to know more.
 
 # More great tutorials and code samples
 I will be writing a detailed tutorial on how to work with this repo on my blog. Until then refer to [my blog] for other tutorials and "how-to" articles with detailed code samples.
 
 If you like what I am doing, you can [buy me a coffee]
 
-Click on the next link for more info on the [software engineering career journey] of the author.
-
+[pom.xml]: https://github.com/cptdanko/spring-boot-react-template/blob/main/pom.xml#L44
+[frontend-maven-plugin]: https://github.com/eirslett/frontend-maven-plugin
 [Jokes API with Spring RestTemplate]: https://mydaytodo.com/how-to-build-a-jokes-client-in-java-spring-boot-with-resttemplate/
 [Call Rest API with Spring WebClient]: https://mydaytodo.com/how-to-call-rest-api-with-webclient/
 [Node Typescript CRUD Notes]: https://github.com/cptdanko/node_typescript_crud_notes

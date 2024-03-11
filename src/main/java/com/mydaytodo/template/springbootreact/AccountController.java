@@ -4,18 +4,16 @@ import com.mydaytodo.template.springbootreact.model.Account;
 import com.mydaytodo.template.springbootreact.model.ApiResponse;
 import com.mydaytodo.template.springbootreact.service.AccountServiceImpl;
 import com.mydaytodo.template.springbootreact.validation.AccountValidator;
-import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @Controller
 @RequestMapping("/api/account")
-@Log
+@Slf4j
 public class AccountController {
 
     @Autowired
@@ -60,8 +58,9 @@ public class AccountController {
         ApiResponse response = accountService.deleteAccount(accountId);
         return new ResponseEntity<>(HttpStatus.valueOf(response.getResponseCode()));
     }
-    @GetMapping("/all")
+    @GetMapping(value = "/all", produces = "application/json")
     public ResponseEntity<ApiResponse> getAllAccounts() {
+        log.info("Received request to get all accounts");
         ApiResponse response = accountService.getAllAccounts();
         return new ResponseEntity<>(response, HttpStatus.valueOf(response.getResponseCode()));
     }

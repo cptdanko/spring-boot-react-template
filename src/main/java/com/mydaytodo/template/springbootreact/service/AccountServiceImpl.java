@@ -20,8 +20,10 @@ public class AccountServiceImpl {
     private AccountDaoImpl accountDao;
 
     public ApiResponse addAccount(Account account) {
+        log.info("About to generate id");
         String id = Account.ID_PATTERN + System.currentTimeMillis();
         account.setAccountId(id);
+        log.info("Adding value "+ id);
         return accountDao.addNewAccount(account);
     }
     public ApiResponse deleteAccount(String accountId) {
@@ -34,6 +36,7 @@ public class AccountServiceImpl {
         return accountDao.getAccountFor(accountId);
     }
     public ApiResponse getAllAccounts() {
+        log.info("here");
         return accountDao.getAllAccounts();
     }
 }
