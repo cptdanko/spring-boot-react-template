@@ -2,6 +2,24 @@
 
 A template to create a monolithic Spring Boot app with a reactjs based front-end.
 
+This repository provides a temnplate for a full stack solution for a Java spring boot API with a react based front-end.
+
+## Details for the Spring Boot API
+A simple spring boot based REST API that can CRUD's data for accounts for customers.
+
+### API structure
+1.  a basic CRUD API for a resource i.e. account
+    - maintain a simple structure without relying too much on certain design patterns
+    - saves data to a in-memory list
+2. react based front-end that sends data back and forth
+    - keep all logic in the one app.js file
+    - don't worry about writing unit tests for rect based UI
+3. postman tests to validate the Spring Boot API
+    - ensure postman tests are checked in the source code
+
+## Details for the react based SPA
+
+** to be added
 
 # More great tutorials and code samples
 I will be writing a detailed tutorial on how to work with this repo on my blog. Until then refer to [my blog] for other tutorials and "how-to" articles with detailed code samples.

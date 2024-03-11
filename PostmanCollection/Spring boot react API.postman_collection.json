@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "14706e00-9f2f-4d54-9cba-f74d4d868ef3",
+		"name": "Spring boot react API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "595931"
+	},
+	"item": [
+		{
+			"name": "save account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Qin-business\",\r\n    \"balance\": 6537.999,\r\n    \"accountType\": \"cheque\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/api/account/",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update account",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountType\": \"ACT_1710148941279\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/api/account/update/ACT_1710148941279",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"account",
+						"update",
+						"ACT_1710148941279"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bhuman-personal\",\r\n    \"balance\": 87.999,\r\n    \"accountType\": \"savings\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/api/account/ACT_1710148941279",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"account",
+						"ACT_1710148941279"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get account",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bhuman-personal\",\r\n    \"balance\": 87.999,\r\n    \"accountType\": \"savings\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/api/account/ACT_1710148949503",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"account",
+						"ACT_1710148949503"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all accounts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bhuman-personal\",\r\n    \"balance\": 87.999,\r\n    \"accountType\": \"savings\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/api/account/ACT__1710148505079",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"account",
+						"ACT__1710148505079"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
