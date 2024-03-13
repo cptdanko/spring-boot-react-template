@@ -29,8 +29,7 @@ The purpose of the UI is to demonstrate certain concepts of UI integration with 
 
 ### Build Plugin
 
-To build a react app and launch it when running ``` mvn spring-boot:run```, the [frontend-maven-plugin] is used. Have a look at the [pom.
-xml] to know more.
+To build a react app and launch it when running ``` mvn spring-boot:run```, the [frontend-maven-plugin] is used. Have a look at the [pom file] to know more.
 
 # More great tutorials and code samples
 I will be writing a detailed tutorial on how to work with this repo on my blog. Until then refer to [my blog] for other tutorials and "how-to" articles with detailed code samples.
@@ -38,7 +37,7 @@ I will be writing a detailed tutorial on how to work with this repo on my blog. 
 If you like what I am doing, you can [buy me a coffee]
 
 [this blogpost]: https://mydaytodo.com/spring-boot-api-with-reactjs/
-[pom.xml]: https://github.com/cptdanko/spring-boot-react-template/blob/main/pom.xml#L44
+[pom file]: https://github.com/cptdanko/spring-boot-react-template/blob/main/pom.xml#L59
 [frontend-maven-plugin]: https://github.com/eirslett/frontend-maven-plugin
 [Jokes API with Spring RestTemplate]: https://mydaytodo.com/how-to-build-a-jokes-client-in-java-spring-boot-with-resttemplate/
 [Call Rest API with Spring WebClient]: https://mydaytodo.com/how-to-call-rest-api-with-webclient/
