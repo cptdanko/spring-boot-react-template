@@ -4,7 +4,10 @@ A template to create a monolithic Spring Boot app with a reactjs based front-end
 
 This repository provides a temnplate for a full stack solution for a Java spring boot API with a react based front-end. This repository 
 presents a monolithic web app based full stack solutions. Building microservices is often considered the norm these days, however 
-monolithic apps still have valid uses for which they can be used, one example being, when doing proof of concept for a new product.
+monolithic apps still have valid uses for which they can be used, one example being, when doing proof of concept for a new product. 
+
+Have a read of [this blogpost] for a walkthrough of this solution.
+
 
 ## Details for the Spring Boot API
 A simple spring boot based REST API that can CRUD's data for accounts for customers.
@@ -34,6 +37,7 @@ I will be writing a detailed tutorial on how to work with this repo on my blog. 
 
 If you like what I am doing, you can [buy me a coffee]
 
+[this blogpost]: https://mydaytodo.com/spring-boot-api-with-reactjs/
 [pom.xml]: https://github.com/cptdanko/spring-boot-react-template/blob/main/pom.xml#L44
 [frontend-maven-plugin]: https://github.com/eirslett/frontend-maven-plugin
 [Jokes API with Spring RestTemplate]: https://mydaytodo.com/how-to-build-a-jokes-client-in-java-spring-boot-with-resttemplate/
