@@ -1,8 +1,9 @@
 package com.mydaytodo.template.springbootreact.model;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
+import lombok.ToString;
 import lombok.extern.java.Log;
-import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
 
