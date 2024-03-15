@@ -36,7 +36,6 @@ public class AccountServiceImpl {
         return accountDao.getAccountFor(accountId);
     }
     public ApiResponse getAllAccounts() {
-        log.info("here");
         return accountDao.getAllAccounts();
     }
 }
